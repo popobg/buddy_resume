@@ -1,0 +1,136 @@
+/*
+** STYLE ELEMENTS GENERAUX
+*/
+body {
+    margin: 2%;
+}
+
+h1 {
+    margin: 0;
+    margin-top: 1%;
+}
+
+h2 {
+    color: #0e016e;
+    width: fit-content;
+    /* Reset les marges par défaut sur le titre 2 */
+    margin: 0;
+}
+
+/* Reset les marges par défaut sur les paragraphes */
+p {
+    margin: 0px;
+    padding-top: 0.4em;
+}
+
+header,
+.main_resume_section {
+    margin: 1% 0;
+
+    display: flex;
+    gap: 2em;
+}
+
+.margin_element {
+    flex-basis: 20%;
+
+    display: flex;
+    justify-content: end;
+}
+
+.main_element {
+    flex-basis: 80%;
+}
+
+/*
+** JAUGE DE PROGRESSION
+*/
+progress {
+    /* Suppression de l'apparence apportée par les navigateurs */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    width: 8em;
+    height: 10px;
+
+    /* Couleur de fond de la barre de progression */
+    background-color: #807f82;
+    border-radius: 10px;
+    /* Pas d'overflow au-delà des bords arrondis */
+    overflow: hidden;
+}
+
+/* Customisation pour les navigateurs type Chrome, Safari... */
+progress::-webkit-progress-bar {
+    background-color: #807f82;
+}
+
+progress::-webkit-progress-value {
+    /* Couleur de la barre de progression */
+    background-color: #0e016e;
+    border-radius: 10px;
+}
+
+/* Customisation pour Firefox */
+progress::-moz-progress-bar {
+    background-color: #0e016e;
+    border-radius: 10px;
+}
+
+/*
+** HEADER
+*/
+.contact_form {
+    width: 40%;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.contact_form div {
+    height: 2em;
+
+    display: flex;
+    gap: 0.5em;
+}
+
+.contact_form div img {
+    object-fit: contain;
+    max-width: 1em;
+    height:auto;
+}
+
+#job_position {
+    color: #0e016e;
+}
+
+/*
+* COMPETENCES
+*/
+
+/*
+* CENTRES D'INTERET
+*/
+.hobbies_container {
+    display: flex;
+}
+
+.check {
+    height: 0.5em;
+    width: 0.25em;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    transform: rotate(45deg);
+    margin: 20px;
+}
+
+/*
+* FORMULAIRE
+*/
+#special_line {
+    color: gray;
+    width: 90%;
+    margin: 2%;
+}
