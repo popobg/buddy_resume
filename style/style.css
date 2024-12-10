@@ -2,7 +2,11 @@
 ** STYLE ELEMENTS GENERAUX
 */
 body {
-    margin: 2%;
+    font-family: 'Open Sans', Arial, sans-serif;
+    padding: 1%;
+    margin: 2% 10%;
+    border: 0.2em solid #0e016e;
+    border-radius:10px;
 }
 
 h1 {
@@ -12,6 +16,8 @@ h1 {
 
 h2 {
     color: #0e016e;
+    font-size: large;
+
     width: fit-content;
     /* Reset les marges par défaut sur le titre 2 */
     margin: 0;
@@ -20,9 +26,27 @@ h2 {
 /* Reset les marges par défaut sur les paragraphes */
 p {
     margin: 0px;
-    padding-top: 0.4em;
 }
 
+ul {
+    margin: 0.5em 0 1em 0;
+    position: relative;
+    right: 1.5em;
+}
+
+/* Customisation ligne de séparation */
+hr {
+    width: 74%;
+    margin-left: 21.5%;
+    margin-right: 3%;
+    border:none;
+    border-top: 0.15em solid #d4d4d4;
+    background-color: #d4d4d4;
+}
+
+/*
+** LAYOUT GLOBAL
+*/
 header,
 .main_resume_section {
     margin: 1% 0;
@@ -42,6 +66,12 @@ header,
     flex-basis: 80%;
 }
 
+.smaller_section_title {
+    width: 6em;
+    text-align: right;
+    overflow: hidden;
+}
+
 /*
 ** JAUGE DE PROGRESSION
 */
@@ -51,11 +81,11 @@ progress {
     -moz-appearance: none;
     appearance: none;
 
-    width: 8em;
+    width: 12em;
     height: 10px;
 
     /* Couleur de fond de la barre de progression */
-    background-color: #807f82;
+    background-color: #ababab;
     border-radius: 10px;
     /* Pas d'overflow au-delà des bords arrondis */
     overflow: hidden;
@@ -63,7 +93,7 @@ progress {
 
 /* Customisation pour les navigateurs type Chrome, Safari... */
 progress::-webkit-progress-bar {
-    background-color: #807f82;
+    background-color: #ababab;
 }
 
 progress::-webkit-progress-value {
@@ -90,7 +120,7 @@ progress::-moz-progress-bar {
 }
 
 .contact_form div {
-    height: 2em;
+    height: 1.3em;
 
     display: flex;
     gap: 0.5em;
@@ -104,33 +134,143 @@ progress::-moz-progress-bar {
 
 #job_position {
     color: #0e016e;
+    font-weight: 500;
+    margin-bottom: 1em;
 }
 
 /*
-* COMPETENCES
+** EXPERIENCES & DIPLÔMES
 */
+.experience_title_container {
+    width: 95%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.experience_title {
+    color: black;
+}
 
 /*
-* CENTRES D'INTERET
+** COMPETENCES & LANGUES
+*/
+.customise_container {
+    height: 5.2em;
+}
+
+.main_element:has(> .progress_container) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15% 20%;
+}
+
+.progress_container {
+    display:flex;
+    flex-direction: column;
+}
+
+.progress_label {
+    font-weight: 700;
+}
+
+/*
+** CENTRES D'INTERET
 */
 .hobbies_container {
+    height: 4.5em;
+
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+.hobbie_container {
+    display: flex;
+    align-content: start;
+    gap:0.3em;
 }
 
 .check {
-    height: 0.5em;
+    height: 0.65em;
     width: 0.25em;
+
     border-bottom: 2px solid black;
     border-right: 2px solid black;
     transform: rotate(45deg);
-    margin: 20px;
+    margin: 0.2em 0.5em;
 }
 
 /*
-* FORMULAIRE
+** FORMULAIRE
 */
 #special_line {
-    color: gray;
+    width: 90%;
+    margin: 3% 2% 2% 5%;
+}
+
+.customise_form {
+    background: linear-gradient(to right, #C6FFDD, #FBD786, #f7797d);
+
     width: 90%;
     margin: 2%;
+    padding: 1% 2%;
+
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.customise_form h1 {
+    color: #0e016e;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.customise_form p {
+    padding-bottom: 1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 3em 10em;
+}
+
+.info div,
+.contact_message {
+    display: flex;
+    flex-direction: column;
+    label {
+        text-align: center;
+        margin-bottom: 0.5em;
+    }
+}
+
+.contact_message {
+    margin: 2%;
+    textarea {
+        min-height: 10em;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+}
+
+.input_field {
+    min-width: 20em;
+    min-height: 2em;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+input[type="submit"] {
+    max-width: 5em;
+    align-self: center;
 }

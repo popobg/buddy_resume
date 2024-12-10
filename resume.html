@@ -8,6 +8,7 @@
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -40,23 +41,26 @@
     <main>
         <section class="main_resume_section">
             <div class="margin_element">
-                <h2 class="section_title">À PROPOS</h2>
+                <h2>À PROPOS</h2>
             </div>
             <div class="main_element">
                 <p>Développeur Java JEE avec plus de 5 ans d'expérience dans le développement web et la conception de
                     solutions logicielles efficaces et évolutives.</p>
-                <hr>
             </div>
         </section>
+        <hr>
 
         <section class="main_resume_section">
             <div class="margin_element">
-                <h2 class="section_title">EXPÉRIENCES</h2>
+                <h2>EXPÉRIENCES</h2>
             </div>
             <div class="main_element">
                 <div>
-                    <div>
-                        <h2 class="experience_title">DÉVELOPPEUR JAVA JEE - ENTREPRISE ANONYME - PARIS</h2>
+                    <div class="experience_title_container">
+                        <div>
+                            <h2 class="experience_title">DÉVELOPPEUR JAVA JEE -</h2>
+                            <h2 class="experience_title">ENTREPRISE ANONYME - PARIS</h2>
+                        </div>
                         <h2 class="time_period">2018-06 - EN COURS</h2>
                     </div>
                     <ul>
@@ -67,8 +71,11 @@
                 </div>
 
                 <div>
-                    <div>
-                        <h2 class="experience_title">DÉVELOPPEUR JAVA JEE - ENTREPRISE ANONYME - LYON</h2>
+                    <div class="experience_title_container">
+                        <div>
+                            <h2 class="experience_title">DÉVELOPPEUR JAVA JEE -</h2>
+                            <h2 class="experience_title">ENTREPRISE ANONYME - LYON</h2>
+                        </div>
                         <h2 class="time_period">2016-02 - 2018-05</h2>
                     </div>
                     <ul>
@@ -79,8 +86,11 @@
                 </div>
 
                 <div>
-                    <div>
-                        <h2 class="experience_title">STAGIAIRE DÉVELOPPEUR JAVA JEE - ENTREPRISE ANONYME - TOULOUSE</h2>
+                    <div class="experience_title_container">
+                        <div>
+                            <h2 class="experience_title">STAGIAIRE DÉVELOPPEUR JAVA JEE -</h2>
+                            <h2 class="experience_title">ENTREPRISE ANONYME - TOULOUSE</h2>
+                        </div>
                         <h2 class="time_period">2015-06 - 2015-12</h2>
                     </div>
                     <ul>
@@ -89,17 +99,17 @@
                         <li>Tests unitaires et d'intégration</li>
                     </ul>
                 </div>
-                <hr>
             </div>
         </section>
+        <hr>
 
         <section class="main_resume_section">
             <div class="margin_element">
-                <h2 class="section_title">ÉTUDES DIPLÔMES</h2>
+                <h2 class="smaller_section_title">ÉTUDES DIPLÔMES</h2>
             </div>
             <div class="main_element">
                 <div>
-                    <div>
+                    <div class="experience_title_container">
                         <h2 class="experience_title">MASTER INFORMATIQUE - GRENOBLE</h2>
                         <h2 class="time_period">OBTENU EN 2016-06</h2>
                     </div>
@@ -111,7 +121,7 @@
                 </div>
 
                 <div>
-                    <div>
+                    <div class="experience_title_container">
                         <h2 class="experience_title">LICENCE INFORMATIQUE - GRENOBLE</h2>
                         <h2 class="time_period">OBTENU EN 2013-06</h2>
                     </div>
@@ -121,103 +131,106 @@
                         <li>Bases de données et systèmes d'information</li>
                     </ul>
                 </div>
-                <hr>
             </div>
         </section>
+        <hr>
 
         <section class="main_resume_section">
             <div class="margin_element">
-                <h2 class="section_title">COMPÉTENCES</h2>
+                <h2>COMPÉTENCES</h2>
             </div>
-            <div class="main_element">
-                <div class="progress_container_skills">
-                    <label for="java_gauge">JAVA</label>
-                    <progress id="java_gauge" value="100" min="0" max="100" low="0" high="100" optimum="100"></progress>
+            <div class="main_element customise_container">
+                <div class="progress_container">
+                    <label for="java_progress" class="progress_label">JAVA</label>
+                    <progress id="java_progress" value="100" min="0" max="100" low="0" high="100" optimum="100"></progress>
                 </div>
-                <div class="progress_container_skills">
-                    <label for="spring_gauge">SPRING</label>
-                    <progress id="spring_gauge" value="80" min="0" max="100" low="0" high="100" optimum="100"></progress>
+                <div class="progress_container">
+                    <label for="spring_progress" class="progress_label">SPRING</label>
+                    <progress id="spring_progress" value="80" min="0" max="100" low="0" high="100" optimum="100"></progress>
                 </div>
-                <div class="progress_container_skills">
-                    <label for="spring_gauge">ANGULARJS</label>
-                    <progress id="spring_gauge" value="60" min="0" max="100" low="0" high="100" optimum="100"></progress>
+                <div class="progress_container">
+                    <label for="spring_progress" class="progress_label">ANGULARJS</label>
+                    <progress id="spring_progress" value="60" min="0" max="100" low="0" high="100" optimum="100"></progress>
                 </div>
-                <div class="progress_container_skills">
-                    <label for="spring_gauge">HIBERNATE</label>
-                    <progress id="spring_gauge" value="40" min="0" max="100" low="0" high="100" optimum="100"></progress>
+                <div class="progress_container">
+                    <label for="spring_progress" class="progress_label">HIBERNATE</label>
+                    <progress id="spring_progress" value="40" min="0" max="100" low="0" high="100" optimum="100"></progress>
                 </div>
-                <div class="progress_container_skills">
-                    <label for="spring_gauge">GIT</label>
-                    <progress id="spring_gauge" value="20" min="0" max="100" low="0" high="100" optimum="100"></progress>
+                <div class="progress_container">
+                    <label for="spring_progress" class="progress_label">GIT</label>
+                    <progress id="spring_progress" value="20" min="0" max="100" low="0" high="100" optimum="100"></progress>
                 </div>
-                <hr>
             </div>
         </section>
+        <hr>
 
         <section class="main_resume_section">
             <div class="margin_element">
-                <h2 class="section_title">LANGUES</h2>
+                <h2>LANGUES</h2>
             </div>
             <div class="main_element">
-                <div class="progress_container_languages">
-                    <label for="english_gauge">ANGLAIS</label>
-                    <progress id="english_gauge" value="70" min="0" max="100" low="0" high="100" optimum="100"></progress>
+                <div class="progress_container">
+                    <label for="english_progress" class="progress_label">ANGLAIS</label>
+                    <progress id="english_progress" value="70" min="0" max="100" low="0" high="100" optimum="100"></progress>
                 </div>
-                <div class="progress_container_languages">
-                    <label for="spanish_gauge">ESPAGNOL</label>
-                    <progress id="spanish_gauge" value="30" min="0" max="100" low="0" high="100" optimum="100"></progress>
+                <div class="progress_container">
+                    <label for="spanish_progress" class="progress_label">ESPAGNOL</label>
+                    <progress id="spanish_progress" value="35" min="0" max="100" low="0" high="100" optimum="100"></progress>
                 </div>
-                <hr>
             </div>
         </section>
+        <hr>
 
         <section class="main_resume_section">
             <div class="margin_element">
-                <h2 class="section_title">CENTRES D'INTÉTRÊT</h2>
+                <h2 class="smaller_section_title">CENTRES D'INTÉTRÊT</h2>
             </div>
-            <div class="main_element">
-                <div class="hobbies_container">
+            <div class="main_element hobbies_container">
+                <div class="hobbie_container">
                     <div class="check"></div>
                     <p>Voyages</p>
                 </div>
-                <div class="hobbies_container">
-                    <div class="check"></div>
-                    <p>Cuisine</p>
-                </div>
-                <div class="hobbies_container">
-                    <div class="check"></div>
-                    <p>Photographie</p>
-                </div>
-                <div class="hobbies_container">
+                <div class="hobbie_container">
                     <div class="check"></div>
                     <p>Sports</p>
                 </div>
-                <div class="hobbies_container">
+                <div class="hobbie_container">
+                    <div class="check"></div>
+                    <p>Cuisine</p>
+                </div>
+                <div class="hobbie_container">
                     <div class="check"></div>
                     <p>Musique</p>
+                </div>
+                <div class="hobbie_container">
+                    <div class="check"></div>
+                    <p>Photographie</p>
                 </div>
             </div>
         </section>
 
         <hr id="special_line">
 
-        <section class="form">
-            <h1>Je réponds à vos questions :</h1>
+        <section class="customise_form">
+            <h1>À vos questions !</h1>
+            <p><em>Les champs obligatoires sont indiqués d'une *.</em></p>
             <form action="" method="POST">
-                <div>
-                    <label for="name">Vos nom prénom :</label>
-                    <input type="text" name="name" id="name" placeholder="Michel Blanc"
-                        title="Lettres (majuscules et/ou minuscules), espaces, apostrophes et tirets acceptés"
-                        pattern="^[\p{L}\s'-]+$" maxlength="100">
-                </div>
-                <div>
-                    <label for="email">Votre adresse mail* :</label>
-                    <input type="email" name="email" id="email" placeholder="michel.blanc@hotmail.fr"
-                        title="format : '--@mailbox.ext' ; champ obligatoire" required>
+                <div class="info">
+                    <div>
+                        <label for="name">Nom prénom :</label>
+                        <input type="text" name="name" id="name" placeholder="Michel Blanc"
+                            title="Lettres (majuscules et/ou minuscules), espaces, apostrophes et tirets acceptés"
+                            pattern="^[\p{L}\s'-]+$" maxlength="100" class="input_field">
+                    </div>
+                    <div>
+                        <label for="email">Adresse mail* :</label>
+                        <input type="email" name="email" id="email" placeholder="michel.blanc@hotmail.fr"
+                            title="format : '--@mailbox.ext' ; champ obligatoire" class="input_field" required>
+                    </div>
                 </div>
                 <div class="contact_message">
-                    <label for="message">Inscrivez votre question ci-dessous :</label>
-                    <textarea name="message" id="message" placeholder="Exprimez-vous !" maxlength="2000"></textarea>
+                    <label for="message">Inscrivez votre question ci-dessous* :</label>
+                    <textarea name="message" id="message" placeholder="Exprimez-vous !" maxlength="2000" required></textarea>
                 </div>
                 <input type="submit" value="Envoyer">
             </form>
