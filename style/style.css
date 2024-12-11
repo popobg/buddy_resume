@@ -256,12 +256,13 @@ form {
 
 .contact_message {
     margin: 2%;
-    textarea {
+}
+
+textarea {
         min-height: 10em;
         border: 1px solid black;
         border-radius: 5px;
     }
-}
 
 .input_field {
     min-width: 20em;
@@ -270,7 +271,42 @@ form {
     border-radius: 10px;
 }
 
+/* Submit button (inspired from CSS Scan style) */
 input[type="submit"] {
-    max-width: 5em;
+    appearance: none;
+    background-color: #2ea44f;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
     align-self: center;
+}
+
+input[type="submit"]:hover {
+  background-color: #2c974b;
+}
+
+input[type="submit"]:focus {
+    box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+    outline: none;
+  }
+
+  input[type="submit"]:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+input[type="submit"]:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
 }
